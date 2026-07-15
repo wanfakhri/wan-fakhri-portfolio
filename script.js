@@ -319,7 +319,7 @@ if (form) {
 
         emailjs.sendForm(
             "service_kjyy2t1",
-            "template_jnykwrx",
+            "template_l3rtker",
             this
         )
         .then(function () {
