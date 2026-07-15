@@ -442,6 +442,9 @@ Contact Me
 <div class="contact-item">
 <i class="fa-solid fa-envelope"></i>
 <p>fakhriaki@gmail.com</p>
+<a href="mailto:fakhriaki@gmail.com">
+    Email Me
+</a>
 </div>
 
 <div class="contact-item">
@@ -460,25 +463,29 @@ Contact Me
 
 <input
 type="text"
+name="from_name"
 placeholder="Your Name"
 required>
 
 <input
 type="email"
+name="reply_to"
 placeholder="Your Email"
 required>
 
 <input
 type="text"
+name="subject"
 placeholder="Subject"
 required>
 
 <textarea
+name="message"
+placeholder="Your Message"
 rows="6"
-placeholder="Message"
 required></textarea>
 
-<button class="btn">
+<button type="submit" class="btn">
 Send Message
 </button>
 
@@ -497,6 +504,14 @@ Send Message
 </p>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({
+        publicKey: "P3GW-1ndVpYXmnVdU"
+    });
+</script>
 
 <script src="script.js"></script>
 
