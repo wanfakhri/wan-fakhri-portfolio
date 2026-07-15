@@ -267,7 +267,6 @@ buttons.forEach(btn => {
 
 });
 
-
 /* ===================================
    Console Message
 =================================== */
@@ -281,3 +280,77 @@ console.log(
 "%cDesigned with HTML5, CSS3 & JavaScript",
 "color:white;font-size:14px;"
 );
+
+...
+console.log(
+"%cDesigned with HTML5, CSS3 & JavaScript",
+"color:white;font-size:14px;"
+);
+
+/* ===================================
+   Contact Form (EmailJS)
+=================================== */
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "YOUR_SERVICE_ID",
+            "...
+console.log(
+"%cDesigned with HTML5, CSS3 & JavaScript",
+"color:white;font-size:14px;"
+);
+
+/* ===================================
+   Contact Form (EmailJS)
+=================================== */
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_kjyy2t1",
+            "template_jnykwrx",
+            this
+        )
+        .then(function () {
+
+            alert("✅ Thank you! Your message has been sent.");
+            form.reset();
+
+        })
+        .catch(function (error) {
+
+            console.error("EmailJS Error:", error);
+            alert("❌ Failed to send message.");
+
+        });
+
+    });
+}",
+            this
+        )
+        .then(function () {
+
+            alert("✅ Thank you! Your message has been sent.");
+            form.reset();
+
+        })
+        .catch(function (error) {
+
+            console.error("EmailJS Error:", error);
+            alert("❌ Failed to send message.");
+
+        });
+
+    });
+}
